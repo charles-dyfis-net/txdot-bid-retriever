@@ -1,0 +1,13 @@
+application: txdot-bid-retriever
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: txdot_bid_retriever.app
+
+libraries:
+- name: lxml
+  version: "2.3"
